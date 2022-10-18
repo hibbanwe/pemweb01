@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BELI BARANG</title>
+  </head>
+  <body style="max-width: 1000px; margin: auto; @media only screen and (max-width: 600px);">
+    <header style="background-color: #cdcdcd">
+      <nav style="display: flex; align-items: center; padding: 10px; border-bottom: 1px solid black">
+        
+
+        <ul style="display: flex; list-style-type: none; gap: 10px">
+          <li>
+            <!-- Home -->
+            <a href="/">Home</a> |
+          </li>
+          <li>
+            <!--- Current -->
+            <a href="/events">Generate Link</a> |
+          </li>
+          <li>
+            <!-- Contact -->
+            <a href="/contact">Transaction History</a>
+          </li>
+          <li>
+            <!-- Contact -->
+            <a href="/contact">Policy</a>
+          </li>
+           <li>
+            <!-- Contact -->
+            <a href="/contact">Logout</a>
+          </li>
+        </ul>
+
+        <ul style="margin-left: auto; display: flex; align-items: center; list-style-type: none; gap: 10px">
+          <li>
+            <img style="width: 30px" src="pict/search.png" alt="">
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div style="display: flex; gap: 20px; margin-top: 10px; padding: 10px">
+      <main style="width: 60%; margin:0 auto">
+          <!-- INI GAMBAR BARANG -->
+         <img width="200" src="ASUS.jfif" style="display: flex; align-items: center" alt="" />
+          <table style="width: 100%">
+          <tr style="padding: 10px 0">
+            <td style="padding: 10px 0"><b>title:</b></td>
+            <td style="text-align: end"><b>ASUS</b></td>
+          </tr>
+          <tr style="padding: 10px 0">
+            <td style="padding: 10px 0"><b>Descreption:</b></td>
+            <td style="text-align: end"><b>Year: 2015 <br>Model: ASUS <br>Condition: black</b></td>
+          </tr>
+          <tr style="padding: 10px 0">
+            <td style="padding: 10px 0; border-bottom: 2px solid white"><b>Total Amaunt:</b></td>
+            <td style="text-align: end; border-bottom: 2px solid white"><b>$560.000</b></td>
+          </tr>
+          <tr style="padding: 10px 0">
+            <td style="padding: 10px 0"><b>Pay To:</b></td>
+            <td style="text-align: end"><b>365-798-671</b></td>
+          </tr>
+           <tr style="padding: 10px 0">
+            <td style="padding: 10px 0"><b>Payment Type:</b></td>
+            <td style="text-align: end"><b><input type="text" name="" value="BCA"></b></td>
+          </tr>
+          <tr style="padding: 10px 0">
+            <td style="padding: 10px 0"><b>Account Holder</b></td>
+            <td style="text-align: end"><b><input type="text" name="" value="HIBBAN AN NAFI MAULIDAN"></b></td>
+          </tr>
+          <tr style="padding: 10px 0">
+            <td style="padding: 10px 0"><b>Account No</b></td>
+            <td style="text-align: end"><b><input type="text" name="" value="365-798-671"></b>
+              <br>
+              <input type="checkbox" name="">Send to Mobile Phone
+              <br>
+              <input type="checkbox" name="">Send to Email
+            </td>
+          </tr>
+           <tr style="padding: 10px 0">
+            <td style="padding: 10px 0"><b>Send to mobile Phone:</b></td>
+            <td style="text-align: end"><b><input type="text" name="" value="085717369179"></b></td>
+          </tr>
+          <tr style="padding: 10px 0">
+            <td style="padding: 10px 0"><b>Send to Email:</b></td>
+            <td style="text-align: end"><b><input type="text" name="" value="hibbanannafii23@gamil.com"></b></td>
+          </tr>
+        </table>
+
+        <!-- Ini tombol bayar -->
+         <a href="#"><button type="submit" style="background-color: #f436ee; width: 350px; height: 50px; font-size: large; color: white; border: none;">Pay using Quidlink</button></a>
+      </main>
+
+     
+    </div>
+  </body>
+</html>
