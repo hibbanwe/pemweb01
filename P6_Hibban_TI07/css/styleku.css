@@ -1,8 +1,71 @@
 body{
     background-color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.header{
+    background-color: chartreuse;
 }
 
-.fp::first-letter{
+ h1 {
+color: blue;
+text-align: center;
+;
+}
+ blockquote {
+    background-color: darkmagenta;
+    text-align: center;
+}
+
+
+.hibban{
+    color: aqua;
+    font-size: xx-large;
+}
+.menu{
+    text-align: center;
+}
+
+.menu ul{
+    display: inline-block;
+    list-style: none;
+}
+
+.menu ul li {
+    float :left;
+    padding: 15px;
+}
+
+thead {
+    font-weight: bold;
+    background-color: wheat;
+}
+
+tbody{
+    background-color: aqua;
+}
+
+.gambar {
+    text-align: center;
+}
+
+.fp::first-letter {
     font-size: 50px;
     color: blue;
 }
+
+.koleksi img {
+    text-align: center;
+    width: 23%;
+}
+
+.promo{
+text-align: center;
+}
+
+
+h1{
+    color: aqua;
+}
+
+.hibba
