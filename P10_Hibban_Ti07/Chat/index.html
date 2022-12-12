@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .box {
+            display: none;
+            flex-direction: column;
+            background-color: #659ef4;
+            width: 500px;
+            height: 300px;
+            margin-left: 700px;
+            margin-top: 110px;
+            padding: 1em;
+            border-radius: 5px;
+        }
+        
+        .wadah_chat {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-color: rgb;
+            width: 100%;
+            height: 95%;
+            word-wrap: break-word;
+        }
+
+        .wrap_text {
+            display: block;
+            word-wrap: break-word;
+            background-color: greenyellow;
+            border-radius: 11px;
+            margin: 0.2em;
+        }
+
+        .tab {
+            margin-left: 80%;
+            margin-top: 30%;
+        }
+
+        .tutuptab {
+            background-color: rgb(35, 232, 232);
+            border-radius: 5px;
+        }
+
+        .kirim {
+            background-color: purple;
+            border-radius: 5px;
+            border: aquamarine;
+        }
+
+        .input {
+            border-radius: 5px;
+            border: aquamarine;
+        }
+    </style>
+    <script>
+        function dekor1() {
+            dekor_1 = document.getElementById("home");
+            dekor_1.style.color = "aqua";
+        }
+
+        function dekor2() {
+            dekor2 = document.getElementById("home");
+            dekor_2.style.color = "black";
+        }
+
+        function chatbox1() {
+            const wadah = document.getElementById("wadah_chat");
+            const inputan = document.getElementById("masukan").value;
+            if (inputan.trim() != "") {
+                wadah.innerHTML += <div class="wrap_text"> <p> +inputan.trim() + </p> </div>
+                masukan.value = "";
+                masukan.focus();
+            }
+        }
+
+        function bukatab() {
+            const tab = document.getElementById("tab");
+            const box = document.getElementById("box");
+            box.style.display = "flex";
+            tab.style.display ="none"
+        }
+
+        function tutuptab() {
+            const tab = document.getElementById("tab");
+            const box = document.getElementById("box");
+            box.style.display = "none";
+            tab.style.display = "flex"
+        }
+    </script>
+</head>
+<body>
+    <a href="" onmouseover="dekor1()" onmouseout="dekor2()" id="home">
+        <h1>Welocome To Hibban An Nafi Maulidan Chat Box</h1>
+    </a>
+    <hr>
+    <br>
+
+    <button class="tab" id="tab" onclick="bukatab()">
+        <h3>Click Here to Send Massage</h3>
+    </button>
+
+    <div class="box" id="box">
+        <button class="tutptab" id="tutptab" onclick="tutuptab()">
+            <h3>Chat</h3>
+        </button>
+        <div class="wadah_chat" id="wadah_chat">
+            <div>
+                <p>Hallo Saya Hibban An Nafi Maulidan dari TI07 ada yang bisa saya bantu</p>
+            </div>
+        </div>
+        <div>
+            <input class="input" id="masukan" type="text" value="" size="62">
+            <button onclick="chatbox1()" class="kirim">Send</button>
+        </div>
+    </div>
+    <br>
+</body>
+
+</html>
