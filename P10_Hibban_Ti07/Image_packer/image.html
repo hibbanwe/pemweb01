@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .container {
+            display: flex;
+            margin: 50px 350px;
+            width: 500px;
+            height: 300px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+
+    <script>
+        function dekor1() {
+            dekor_1 = document.getElementById("home");
+            dekor_1.style.color = "darkblue";
+        }
+
+        function dekor2() {
+            dekor_2 = document.getElementById("home");
+            dekor_2.style.color = "black";
+        }
+
+        function imagepicker() {
+            const list_image = ["ayam.jpg", "burung.jpg", "elang.jpg", "gorila.jpg",
+                "hamster.jpg", "ikan.jpg", "singa.jpg"]
+            let pilihan = document.getElementById("option");
+
+            if (pilihan.value == "Ayam") {
+                let select = list_image[0];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar ayam.jpg")
+            }
+
+
+            if (pilihan.value == "Burung") {
+                let select = list_image[1];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar burung.jpg")
+            }
+
+            if (pilihan.value == "Elang") {
+                let select = list_image[2];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar elang.jpg")
+            }
+
+            if (pilihan.value == "Gorila") {
+                let select = list_image[3];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar gorila.jpg")
+            }
+
+            if (pilihan.value == "Hamster") {
+                let select = list_image[4];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar hamster.jpg")
+            }
+
+            if (pilihan.value == "Ikan") {
+                let select = list_image[5];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar ikan.jpg")
+
+            }
+
+            if (pilihan.value == "Singa") {
+                let select = list_image[6];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar singa.jpg")
+
+            }
+
+            
+
+            }
+
+
+        
+    </script>
+</head>
+
+<body>
+    <a href="" onmouseover="dekor1()" onmouseout="dekor2()" id="home">
+        <h1>Welcome to Animal Zoo</h1>
+    </a>
+    <hr>
+    <br>
+    <select id="option" onchange="imagepicker()">
+        <option value="" selected>Pilih Gambar</option>
+        <option value="Ayam">Ayam</option>
+        <option value="Burung">Burung</option>
+        <option value="Elang">Elang</option>
+        <option value="Gorila">Gorila</option>
+        <option value="Hamster">Hamster</option>
+        <option value="Ikan">Ikan</option>
+        <option value="Singa">Singa</option>
+    </select>
+    <br>
+    <div class="container" id="container">
+        <div class="box" id="box">
+            <img id="image">
+        </div>
+    </div>
+</body>
+</html>
